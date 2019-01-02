@@ -9,5 +9,9 @@ setup(name='jal_nba',
       license='MIT',
       packages=['jal_nba'],
       zip_safe=False,
+      install_requires = [
+          pytz,
+          requests
+      ],
       include_package_data=True
       )
