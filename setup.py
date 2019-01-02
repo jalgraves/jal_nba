@@ -10,8 +10,8 @@ setup(name='jal_nba',
       packages=['jal_nba'],
       zip_safe=False,
       install_requires = [
-          pytz,
-          requests
+          'pytz',
+          'requests'
       ],
       include_package_data=True
       )
