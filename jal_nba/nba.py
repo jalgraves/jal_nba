@@ -33,8 +33,8 @@ def _config(config_file):
 
 BASE_URL = 'https://stats.nba.com/stats/'
 
-
-CONFIG = _config('config.json')
+_config_file = os.path.join(os.path.dirname(__file__), 'config.json')
+CONFIG = _config(_config_file)
 COUNT = 0
 
 
@@ -96,7 +96,7 @@ class NBA:
     """
     Create NBA team object
     """
-    teams = _config('jal_nba/nba_teams.json')
+    teams = _config(os.path.join(os.path.dirname(__file__), 'nba_teams.json'))
 
     def __init__(self):
         self._session = requests.session()
