@@ -1,4 +1,5 @@
 __pycache__
 jal_nba.egg-info/
+build/
 dist/
 .DS_Store
